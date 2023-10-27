@@ -28,7 +28,7 @@ Para executar o projeto, siga as etapas a seguir:
 
 ## Análise dos Dados
 
-Após a coleta dos dados, você pode usar ferramentas como o Microsoft Excel para analisar os resultados. O arquivo CSV contém informações sobre a idade, gênero e respostas para cada participante. Você pode usar gráficos e tabelas para visualizar os resultados de forma eficaz.
+Após a coleta dos dados, você pode usar ferramentas como o Microsoft Excel para analisar os resultados. O arquivo CSV contém informações sobre nome, idade, gênero e respostas para cada participante. Você pode usar gráficos e tabelas para visualizar os resultados de forma eficaz.
 
 ## Contribuições
 
