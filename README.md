@@ -33,3 +33,10 @@ Após a coleta dos dados, você pode usar ferramentas como o Microsoft Excel par
 ## Contribuições
 
 Contribuições para melhorar a pesquisa e a análise dos dados são bem-vindas. Você pode personalizar as perguntas, adicionar mais tópicos ou criar análises mais avançadas dos resultados.
+# Contribuidores 
+- [Cezar Henrique](https://github.com/CezarHick)
+- [Gabriel Jordão](https://github.com/jordaozz)
+- [Hanna Jacob](https://github.com/HannaJacob)
+- [Luiz Felipe]()
+- [Thayanne Beatriz]()
+
