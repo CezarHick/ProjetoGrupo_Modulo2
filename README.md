@@ -37,6 +37,6 @@ Contribuições para melhorar a pesquisa e a análise dos dados são bem-vindas.
 - [Cezar Henrique](https://github.com/CezarHick)
 - [Gabriel Jordão](https://github.com/jordaozz)
 - [Hanna Jacob](https://github.com/HannaJacob)
-- [Luiz Felipe]()
+- [Luiz Felipe](lfcvs.rj@gmail.com)
 - [Thayanne Beatriz]()
 
