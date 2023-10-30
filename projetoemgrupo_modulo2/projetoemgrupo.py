@@ -9,11 +9,12 @@ class Pergunta:
 
 # Classe para repostas
 class Resposta:
-    def __init__(self, idade, genero, respostas, nome):
+    def __init__(self, idade, genero, respostas, nome, cidade):
         self.idade = int(idade)
         self.genero = genero
         self.respostas = respostas
         self.nome = nome
+        self.cidade = cidade
         self.data_hora = datetime.now()
 
 # Classe para realizar enquete
@@ -38,8 +39,11 @@ class Enquete:
         nome = input('Me diga seu nome: ')
         if nome == '00':
             exit()
-        genero = input('Agora digite seu gênero: ')
+        genero = input('Digite seu gênero: ')
         if genero == '00':
+            exit()
+        cidade = input('Diga sua cidade: ')
+        if cidade == '00':
             exit()
 
         # Comparativos
@@ -58,7 +62,7 @@ class Enquete:
                 print('Opção inválida, tente novamente!')
 
         # Arquiva a resposta
-        resposta = Resposta(idade, genero, respostas, nome)
+        resposta = Resposta(idade, genero, respostas, nome, cidade)
         self.respostas.append(resposta)
 
     # Importa para o excel
@@ -66,11 +70,11 @@ class Enquete:
         with open(nome_arquivo, mode='a', newline='') as file:
             writer = csv.writer(file)
             if file.tell() == 0:
-                cabecalho = ["Nome", "Idade", "Genero", "Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4", "Resposta 5", "Resposta 6", "Data e Hora"]
+                cabecalho = ["Nome", "Idade", "Genero", "Cidade", "Resposta 1", "Resposta 2", "Resposta 3", "Resposta 4", "Resposta 5", "Resposta 6", "Data e Hora"]
                 writer.writerow(cabecalho)
 
             for resposta in self.respostas:
-                linha = [resposta.nome, resposta.idade, resposta.genero] + resposta.respostas + [resposta.data_hora.strftime("%Y-%m-%d %H:%M:%S")]
+                linha = [resposta.nome, resposta.idade, resposta.genero, resposta.cidade] + resposta.respostas + [resposta.data_hora.strftime("%Y-%m-%d %H:%M:%S")]
                 writer.writerow(linha)
 
 # Criar uma instância da pesquisa
